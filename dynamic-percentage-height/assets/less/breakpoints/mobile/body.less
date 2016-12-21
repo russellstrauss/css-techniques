@@ -1,0 +1,56 @@
+// make boxes on right side take 50% height of parent
+.expanding-pod {
+	position: relative;
+}
+.right-side {
+	position: absolute;
+	height: 100%; // required in order to have children accept percentage height
+}
+.box {
+	height: 50%;
+}
+
+
+// and to center the paragraphs vertically within the boxes as well:
+.box {
+	p {
+		position: relative;
+		top: 50%;
+		-webkit-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		transform: translateY(-50%);
+		margin: 0;
+	}
+}
+
+
+// for layout and display only:
+.container {
+	padding: 0;
+}
+div {
+	border: 1px solid black;
+}
+.box {
+	box-sizing: border-box;
+}
+.left-side, .right-side {
+	float: left;
+	width: 50%;
+	box-sizing: border-box;
+}
+.left-side {
+	padding: 5px;
+}
+.right-side {
+	border: 0;
+	right: 0;
+}
+.box p {
+	text-align: center;
+}
+.clearfix {
+	float: none;
+	clear: both;
+	border: 0;
+}
