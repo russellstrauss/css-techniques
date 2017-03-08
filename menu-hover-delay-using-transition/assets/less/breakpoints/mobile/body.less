@@ -1,0 +1,49 @@
+.transition(@attributes...) {
+	-moz-transition: @attributes;
+	-webkit-transition: @attributes;
+	transition: @attributes;
+}
+
+.transitionDelay(@attributes) {
+	-moz-transition-delay: @attributes;
+	-webkit-transition-delay: @attributes;
+	transition-delay: @attributes;
+}
+
+.menu {
+	> li {
+		display: inline-block;
+		margin-right: 150px;
+		border: 1px solid black;
+		width: 100px;
+		text-align: center;
+		position: relative;
+		cursor: pointer;
+		
+		&:hover {
+			> .submenu {
+				visibility: visible;
+				opacity: 1;
+				.transitionDelay(0s);
+			}
+		}
+		
+		> .submenu {
+			.transitionDelay(.3s);
+			
+			padding-left: 0;
+			border: 1px solid blue;
+			position: absolute;
+			top: 20px;
+			width: 100%;
+			visibility: hidden;
+			opacity: 0;
+			
+			
+			> li {
+				list-style-type: none;
+				
+			}
+		}
+	}
+}

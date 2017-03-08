@@ -1,0 +1,47 @@
+/* Imports */
+/* breakpoints */
+/* color branding */
+/*@import-once 'vars.less';*/
+.clearfix {
+  float: none;
+  clear: both;
+}
+/* MOBILE FIRST! */
+.menu > li {
+  display: inline-block;
+  margin-right: 150px;
+  border: 1px solid black;
+  width: 100px;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+}
+.menu > li:hover > .submenu {
+  visibility: visible;
+  opacity: 1;
+  -moz-transition-delay: 0s;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+.menu > li > .submenu {
+  -moz-transition: visibility 0s opacity 0s;
+  -webkit-transition: visibility 0s opacity 0s;
+  transition: visibility 0s opacity 0s;
+  -moz-transition-delay: 0.3s;
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+  padding-left: 0;
+  border: 1px solid blue;
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  visibility: hidden;
+  opacity: 0;
+}
+.menu > li > .submenu > li {
+  list-style-type: none;
+}
+/* Desktop only */
+@media (min-width: 1025px) {
+  /* Desktop sublayouts */
+}
