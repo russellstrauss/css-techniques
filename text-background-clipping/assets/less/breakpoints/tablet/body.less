@@ -1,0 +1,129 @@
+body {
+	position: relative;
+}
+
+header {
+	padding: 15px 30px;
+	nav.upper {
+		font-family: 'Roboto', sans-serif;
+		font-weight: 500;
+		ul {
+			text-align: right;
+			li {
+				list-style-type: none;
+				display: inline-block;
+				color: #696b6b;
+				margin-left: 15px;
+				a {
+					color: #696b6b;
+					text-decoration: underline;
+				}
+				img {
+					vertical-align: inherit;
+					margin-left: 10px;
+				}
+			}
+		}
+	}
+	nav.main {
+		font-family: 'Roboto', sans-serif;
+		color: #004b86;
+		img {
+			float: left;
+		}
+		ul {
+			float: right;
+			text-align: right;
+			
+			li {
+				font-size: 22px;
+				font-weight: 500;
+				margin-left: 40px;
+				display: inline-block;
+				list-style-type: none;
+			}
+		}
+	}
+}
+
+.video-container {
+	position: relative;
+	max-height: 600px;
+	z-index: 50;
+	overflow-y: hidden;
+	video {
+		width: 100%;
+		height: auto;
+	}
+	.video-cta {
+		position: absolute;
+		top: 300px;
+		color: white;
+		width: 100%;
+		h2 {
+			font-family: 'Roboto', sans-serif;
+			font-weight: 900;
+			font-size: 60px;
+			text-align: center;
+			margin: 0 0 20px 0;
+		}
+		a {
+			font-family: 'Roboto', sans-serif;
+			text-align: center;
+			color: white;
+			display: table;
+			margin: 0 auto;
+			.borderRadius(12px);
+			border: 1px solid white;
+			padding: 10px 75px;
+			font-size: 22px;
+			font-weight: 500;
+			text-decoration: none;
+		}
+	}
+}
+
+.wave {
+	position: absolute;
+	width: 100%;
+	z-index: 100;
+	margin-top: -65px;
+}
+
+.three-col-img-cta {
+	width: 100%;
+	padding: 0;
+	z-index: 75;
+	position: relative;
+	margin-top: -20px;
+	li {
+		position: relative;
+		list-style-type: none;
+		width: 100/3%;
+		float: left;
+		img {
+			width: 100%;
+		}
+		.cta {
+			background: url(../img/arrow-circle-cta.png) no-repeat bottom 35% right 4%;
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			color: white;
+			padding: 15px 25px;
+			cursor: pointer;
+			h3 {
+				font-family: 'Roboto', sans-serif;
+				margin: 0 0 5px 0;
+				font-size: 24px;
+				font-weight: 500;
+			}
+			p {
+				font-family: 'Roboto', sans-serif;
+				font-size: 16px;
+				font-weight: 300;
+				width: 90%;
+			}
+		}
+	}
+}

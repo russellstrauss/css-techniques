@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="assets/less/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+	<style>
+		
+		body {
+			background: #000;
+			color: #FFF;
+			overflow-x: hidden;
+		}
+		
+		.full-page {
+			position: relative;
+			width: 100vw;
+			height: 100vh;
+		}
+		
+		h1 {
+			/*Background and Clipping*/
+			-webkit-text-fill-color: transparent;
+			-webkit-background-clip: text;
+			background-repeat: repeat;
+			background-position: center center;
+			background-size: 100%;
+			
+			/* Font and vertical centering */
+			font-family: 'Anton', sans-serif;
+			font-size: 500px;
+			position: relative;
+			top: 50%;
+			-webkit-transform: translateY(-50%);
+			-ms-transform: translateY(-50%);
+			transform: translateY(-50%);
+			margin: 0;
+			text-align: center;
+			text-transform: uppercase;
+		}
+		.space {
+			background-image: url(assets/img/pink-nebula.jpg);
+		}
+		.forest {
+			background-image: url();
+		}
+		.sky {
+			background-image: url(assets/img/mountain-sky.jpg);
+		}
+		.mountains {
+			background-image: url(assets/img/mountains.jpg);
+			background-image: url(assets/img/mountain-sky.jpg);
+			
+		}
+	</style>
+</head>
+<body>
+
+	<div class="full-page">
+		<h1 class="space">SPACE</h1>
+	</div>
+	<div class="full-page">
+		<h1 class="forest">forest</h1>
+	</div>
+	<div class="full-page">
+		<h1 class="sky">sky</h1>
+	</div>
+	<div class="full-page">
+		<h1 class="mountains">MTNS</h1>
+	</div>
+	
+	<script src="assets/js/jquery-2.2.3.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+</html>
